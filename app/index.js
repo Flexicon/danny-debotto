@@ -11,10 +11,15 @@ bot.on('ready', function(event) {
 
 bot.on('message', function(user, userID, channelID, message, event) {
     console.log('message received: '+ message);
-    if (message === "!dong") {
-        bot.sendMessage({
-            to: channelID,
-            message: "Oops I dropped my massive condoms, which I use for my MAGNUM DONG!"
-        });
+    
+    if (message[0] === '!') {
+	switch(message) {
+	    case "!dong":
+		bot.sendMessage({
+		    to: channelID,
+		    message: "Oops I dropped my monster condoms, which I use for my MAGNUM DONG!"
+		});
+		break;
+	}
     }
 });

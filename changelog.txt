@@ -1,0 +1,16 @@
+===================================================
+ * Legend
+===================================================
+   (*) - Security Fix
+   (#) - Bug Fix
+   (+) - Feature Added
+   (-) - Feature Removed
+   (!) - Change
+===================================================
+=====================
+ Version 0.0.1
+=====================
+ * Release: Oct 6, 2016
+---------------------
+Project Started
+(+) Feature Added - First command, "!dong". I mean what else would you expect?
