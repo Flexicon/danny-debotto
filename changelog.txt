@@ -14,3 +14,5 @@
 ---------------------
 Project Started
 (+) Feature Added - First command, "!dong". I mean what else would you expect?
+(+) Feature Added - add !dongsupport to display user help and !gohome to disconnect bot
+(+) Feature Added - add JSON file to store help info that the bot reports to the user
