@@ -1,0 +1,12 @@
+{
+    "commands": [
+	{
+	    "command": "!dong",
+	    "desc": "Oh no, poor Danny dropped one of his prized possesions!"
+	},
+	{
+	    "command": "!gohome",
+	    "desc": "Send Danny home, we've had enough."
+	}
+    ]
+}
