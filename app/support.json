@@ -1,8 +1,20 @@
 {
     "commands": [
 	{
+	    "command": "!dongsupport",
+	    "desc": "Well you're here already ya dummy!"
+	},
+	{
 	    "command": "!dong",
 	    "desc": "Oh no, poor Danny dropped one of his prized possesions!"
+	},
+	{
+	    "command": "!randong",
+	    "desc": "Danny bursts into the voice chat and blares one of his classic dongs! **WARNING:** quite loud. Danny needs calming down."
+	},
+	{
+	    "command": "!leave",
+	    "desc": "Sometimes, Danny just won't leave the voice chat. Get him outta here!"
 	},
 	{
 	    "command": "!gohome",
