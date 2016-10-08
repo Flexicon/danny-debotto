@@ -25,6 +25,12 @@ fs.readdir('app/sounds/', function (err, files) {
     console.log('sounds loaded');
 });
 
+// Dong responses
+var dongs = [
+    "Ohh whoops ooh... I dropped my monster condom, that I use for my MAGNUM DONG!", 
+    "http://i.imgur.com/ueLDY8u.jpg"
+];
+
 // Event fires when bot is connected and ready to receive commands
 bot.on('ready', function(event) {
     console.log('Logged in as %s - %s\n', bot.username, bot.id);
@@ -51,18 +57,30 @@ bot.on('message', function(user, userID, channelID, message, event) {
 	// --------------------------------------------------------------------------------------------
 	// !DONG
 	    case "!dong":
+		var msg = dongs[Math.floor(Math.random() * dongs.length)];
 		bot.sendMessage({
 		    to: channelID,
-		    message: "Oops I dropped my monster condoms, which I use for my MAGNUM DONG!"
+		    message: msg
 		});
 		break;
 	// END !DONG
 	// --------------------------------------------------------------------------------------------
 	// !RANDONG
 	    case "!randong":
-		var sound = sounds[Math.floor(Math.random() * sounds.length)];
+		// Prevents bot from crashing if command is called in dm chat
+		if(!bot.channels[channelID]) {
+		    break;
+		}
 		var serverID = bot.channels[channelID].guild_id;
 		var voiceChannelID = bot.servers[serverID].members[userID].voice_channel_id;
+		if(!voiceChannelID) {
+		    bot.sendMessage({
+			to: channelID,
+			message: "You're not in any voice chat ya dingus!"
+		    });
+		    break;
+		}
+		var sound = sounds[Math.floor(Math.random() * sounds.length)];
 		bot.joinVoiceChannel(voiceChannelID, function(error, events) {
 		    if (error) return console.error(error);
 
@@ -81,6 +99,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 	// --------------------------------------------------------------------------------------------
 	// !LEAVE
 	    case "!leave":
+		// Prevents bot from crashing if command is called in dm chat
+		if(!bot.channels[channelID]) {
+		    break;
+		}
 		var serverID = bot.channels[channelID].guild_id;
 		var voiceChannelID = bot.servers[serverID].members[userID].voice_channel_id;
 		bot.leaveVoiceChannel(voiceChannelID);
