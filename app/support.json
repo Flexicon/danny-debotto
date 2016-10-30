@@ -6,11 +6,15 @@
 	},
 	{
 	    "command": "!dong",
-	    "desc": "Oh no, poor Danny dropped one of his prized possesions!"
+	    "desc": "One of Danny's most prized possesions!"
 	},
 	{
 	    "command": "!randong",
 	    "desc": "Danny bursts into the voice chat and blares one of his classic dongs! **WARNING:** quite loud. Danny needs calming down."
+	},
+	{
+	    "command": "!doogle [Thing to search]",
+	    "desc": "When somebody just doesn't understand how Google works."
 	},
 	{
 	    "command": "!leave",
