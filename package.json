@@ -1,15 +1,16 @@
 {
-    "name": "danny-debotto-js",
-    "version": "0.0.1",
-    "description": "",
-    "main": "danny.js",
-    "scripts": {
-	"start": "nodemon danny.js",
-	"test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Flexicondev",
-    "license": "ISC",
-    "dependencies": {
-	"discord.io": "^2.2.3"
-    }
+  "name": "danny-debotto-js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "danny.js",
+  "scripts": {
+    "start": "nodemon danny.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flexicondev",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "^2.2.3",
+    "winston": "^2.3.0"
+  }
 }
