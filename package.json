@@ -2,10 +2,9 @@
     "name": "danny-debotto-js",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "main": "danny.js",
     "scripts": {
-	"start": "node app/index.js",
-	"dev": "nodemon app/index.js",
+	"start": "nodemon danny.js",
 	"test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Flexicondev",
