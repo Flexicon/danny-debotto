@@ -3,10 +3,11 @@
 // Entry point for discord.io based bot, danny debotto
 var Discord = require('discord.io');
 var bot = new Discord.Client({
-	autorun: true,
+	autorun: false,
 	token: "MjMzNTE0OTg0OTYzODMzODU2.CtfMpw.wzclANocmDTHS_j07lbQAAHSy6M",
 	messageCacheLimit: 5
 });
+bot.connect();
 
 // Load dongsupport json
 var fs = require('fs');
@@ -46,7 +47,8 @@ bot.on('ready', function (event) {
 });
 
 // Automatic reconnect so it maybe fixes the crashing by just reconnecting??
-bot.on('disconnect', function (event) {
+bot.on('disconnect', function (errMsg, code) {
+	console.log("Error Code: " + code);
 	console.log('Disconnected...\nReconnecting...');
 	bot.connect();
 });
@@ -157,5 +159,12 @@ bot.on('message', function (user, userID, channelID, message, event) {
 					break;
 			}
 		}
+	}
+	// KEKERINO
+	else if (message.toLowerCase().indexOf('kek') !== -1 && userID !== bot.id) {
+		bot.sendMessage({
+			to: channelID,
+			message: "http://i2.kym-cdn.com/photos/images/newsfeed/001/111/422/7a9.jpg"
+		});
 	}
 });

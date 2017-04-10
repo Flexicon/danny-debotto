@@ -8,6 +8,20 @@
    (!) - Change
 ===================================================
 =====================
+ Version 0.0.3
+=====================
+ * Release: Apr 10, 2017
+---------------------
+(#) Bug Fix - Changed the way the disconnect event is handled. Hopefully fully fixed the reconnection issues?
+
+=====================
+ Version 0.0.2
+=====================
+ * Release: Apr 10, 2017
+---------------------
+(+) Feature Added - Danny seeks out 'kek's and reacts appropriately!
+
+=====================
  Version 0.0.1
 =====================
  * Release: Oct 6, 2016
