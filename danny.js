@@ -40,6 +40,13 @@ var dongs = [
 	"https://66.media.tumblr.com/cd0a5db038f684087200b476e6292d08/tumblr_o5qyhkbQNv1vqutcko1_500.jpg"
 ];
 
+// Many Keks
+var keks = [
+	"http://i2.kym-cdn.com/photos/images/newsfeed/001/111/422/7a9.jpg",
+	"http://i3.kym-cdn.com/photos/images/original/001/023/759/257.jpg",
+	"http://i0.kym-cdn.com/photos/images/masonry/001/023/762/343.jpg"
+];
+
 // Event fires when bot is connected and ready to receive commands
 bot.on('ready', function (event) {
 	console.log('Logged in as %s - %s\n', bot.username, bot.id);
@@ -162,9 +169,10 @@ bot.on('message', function (user, userID, channelID, message, event) {
 	}
 	// KEKERINO
 	else if (message.toLowerCase().indexOf('kek') !== -1 && userID !== bot.id) {
+		var msg = keks[Math.floor(Math.random() * keks.length)];
 		bot.sendMessage({
 			to: channelID,
-			message: "http://i2.kym-cdn.com/photos/images/newsfeed/001/111/422/7a9.jpg"
+			message: msg
 		});
 	}
 });
