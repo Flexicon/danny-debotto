@@ -5,3 +5,5 @@
 A Discord bot based on everyones favorite short trash man!
 
 Made with love, using [Discord.io](https://github.com/izy521/discord.io) and [Node.js](https://nodejs.org/en/).
+
+Add it to your server [here](https://discordapp.com/oauth2/authorize?client_id=233514984963833856&scope=bot&permissions=0)!
