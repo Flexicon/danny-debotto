@@ -44,7 +44,11 @@ var dongs = [
 var keks = [
 	"http://i2.kym-cdn.com/photos/images/newsfeed/001/111/422/7a9.jpg",
 	"http://i3.kym-cdn.com/photos/images/original/001/023/759/257.jpg",
-	"http://i0.kym-cdn.com/photos/images/masonry/001/023/762/343.jpg"
+	"http://i0.kym-cdn.com/photos/images/masonry/001/023/762/343.jpg",
+	"http://i.imgur.com/o50ZXMb.png",
+	"http://i.imgur.com/54Zofhc.png",
+	"http://i.imgur.com/j8qqccK.png",
+	"http://i.imgur.com/iUIaETV.png"
 ];
 
 // Event fires when bot is connected and ready to receive commands
