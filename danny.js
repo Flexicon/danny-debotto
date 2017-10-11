@@ -4,7 +4,7 @@
 var Discord = require('discord.io');
 var bot = new Discord.Client({
 	autorun: false,
-	token: "MjMzNTE0OTg0OTYzODMzODU2.CtfMpw.wzclANocmDTHS_j07lbQAAHSy6M",
+	token: "MjMzNTE0OTg0OTYzODMzODU2.DL-lwg.yHEHQNq9X2oybvyeMbJgREojUMM",
 	messageCacheLimit: 5
 });
 bot.connect();
@@ -59,7 +59,8 @@ bot.on('ready', function (event) {
 
 // Automatic reconnect so it maybe fixes the crashing by just reconnecting??
 bot.on('disconnect', function (errMsg, code) {
-	console.log("Error Code: " + code);
+	console.error("Error Code: " + code);
+	console.error("Message: " + errMsg);
 	console.log('Disconnected...\nReconnecting...');
 	bot.connect();
 });
