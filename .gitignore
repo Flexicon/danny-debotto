@@ -3,5 +3,7 @@
 /.tmp
 /.sass-cache
 /bower_components
+/.idea
 /nbproject/
 /danny.yml
+/nodemon.json
