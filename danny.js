@@ -4,7 +4,7 @@
 var Discord = require('discord.io');
 var bot = new Discord.Client({
 	autorun: false,
-	token: "MjMzNTE0OTg0OTYzODMzODU2.DL-lwg.yHEHQNq9X2oybvyeMbJgREojUMM",
+	token: process.env.TOKEN,
 	messageCacheLimit: 5
 });
 bot.connect();
